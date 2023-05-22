@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Wagner Cesar Vieira">
+    <title>Contato</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<header>
+    <figure>
+        <a href="../index.html"><img src="../images/logo.png" alt="Sumiu" title="Este é o meu logo"></a>
+    </figure>
+
+    <section id="Busca">
+        <img src="../images/search3.png" alt="Sumiu"/>
+        <input type="text" id="txtBusca" placeholder="Buscar..."/>
+        <button id="btnBusca">Buscar</button>
+    </section>
+
+    <nav>
+        <a href="../index.html"><button>Home</button></a>
+       <a href="../pages/minhavida.html"><button>Minha vida</button></a>
+       <a href="../pages/howto.html"><button>How-to</button></a>
+        <button>Contato</button>
+    </nav>
+</header>
+<body>
+    <main class="formulário">
+        <section class="post">
+            <form action="cadastro.html" method="post">
+                <h3>Contato</h3>
+                <section>
+                Nome
+                <input type="text" id="nome" name="nome" 
+                placeholder="Por favor informe seu nome completo" required maxlength="30">
+             </section>
+            
+             <section>
+               E-mail 
+               <input type="email" id="email" name="email"
+               placeholder="Por favor ensira seu E-mail" required>
+            <section>
+            
+                <section>
+            Data de nascimento
+            <input type="date" id="nascimento" name="nascimento" required>
+                </section>
+            
+                <section>
+            Telefone
+            <input type="tel" id="telefone" name="telefone" pattern="[(0-9)]-[0-9]-[0-9]">
+            </section>
+            
+            
+            <section>
+                Sexo
+                <input type="radio" id="Feminino" name="Sexo"> Feminino
+                <input type="radio" id="Masculino" name="Sexo"> Masculino
+            </section>
+            
+            <section>
+                CPF
+                <input type="number" id="cpf" name="cpf" required>
+            </section>
+            
+            <section> 
+                Qual é a sua cidade?
+                <select name="cidade" id="cidade" required> 
+                    <option value="Nada">Selecione abaixo</option>
+                    <option value="Bebs"> Bebedouro - SP</option>
+                    <option value="ma">Monte Azul Paulista - SP</option>
+                    <option value="vira">Viradouro - SP</option>
+                    <option value="tai">Taíuva - SP</option>
+
+                    
+                    <input type="text" id="othercity" name="outhercity" 
+                    placeholder="Digite aqui outra cidade" required maxlength="30">
+                
+                </select>
+            </section>
+
+                Qual é a sua classe?
+                <select name="classe" id="classe" required> 
+                    <option value="Nada">Selecione abaixo</option>
+                    <option value="1info"> 1º Informática</option>
+                    <option value="1adm">1º Administração</option>
+                    <option value="1ling">1º Linguagem</option>
+                    <option value="1mkt">1º Marketing</option>
+                    <option value="1ser">1º Serviços Juridicos</option>
+                </select>
+            </section>
+                <input type="submit" id="botao" name="botao" value="Gravar">
+                <input type="reset" id="botao2" name="botao2" value="Limpar">
+            </form>
+    </main>
+</body>
+
+<footer>
+    <p>Made by Marcos Minto Dias &copy;</p>
+</footer>
+</html>
