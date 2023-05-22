@@ -42,7 +42,11 @@
                E-mail 
                <input type="email" id="email" name="email"
                placeholder="Por favor ensira seu E-mail" required>
-            <section>
+            
+                    Senha 
+                    <input type="password" id="password" name="password"
+                    placeholder="Por favor ensira sua senha" required>
+                 <section>
             
                 <section>
             Data de nascimento
@@ -65,6 +69,12 @@
                 CPF
                 <input type="number" id="cpf" name="cpf" required>
             </section>
+            <section>
+                O que faz?
+                <input type="radio" id="Trabalhando" name="Trabalhando"> Trabalhando
+                <input type="radio" id="Estudando" name="Estudando"> Estudando
+                <input type="radio" id="Ambos" name="Ambos"> Ambas as opções
+            </section>
             
             <section> 
                 Qual é a sua cidade?
@@ -82,15 +92,24 @@
                 </select>
             </section>
 
-                Qual é a sua classe?
+            Ano
+            <select name="classe" id="classe" required> 
+                <option value="Nada">Selecione abaixo</option>
+                <option value="1info">1º</option>
+                <option value="1adm">2º</option>
+                <option value="1ling">3º</option>
+            </select>
+
+                Qual é a curso?
                 <select name="classe" id="classe" required> 
                     <option value="Nada">Selecione abaixo</option>
-                    <option value="1info"> 1º Informática</option>
-                    <option value="1adm">1º Administração</option>
-                    <option value="1ling">1º Linguagem</option>
-                    <option value="1mkt">1º Marketing</option>
-                    <option value="1ser">1º Serviços Juridicos</option>
+                    <option value="1info">Informática</option>
+                    <option value="1adm">Administração</option>
+                    <option value="1ling">Linguagem</option>
+                    <option value="1mkt">Marketing</option>
+                    <option value="1ser">Serviços Juridicos</option>
                 </select>
+
             </section>
                 <input type="submit" id="botao" name="botao" value="Gravar">
                 <input type="reset" id="botao2" name="botao2" value="Limpar">
